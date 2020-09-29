@@ -98,11 +98,5 @@ gitalk:
 &emsp;&emsp; 我的博客主题用的是`freemind`，这是一个复古风格的主题，这个主题本身不带评论插件的，本人进行了二次封装，修改了一些样式和bug,并上传到了自己的`github`中，欢迎star。  [**传送门**](https://github.com/qisi007/hexo-theme-freemind.386.second)
 
 
-
-### 个人博客主页：[**传送门**](https://www.liuguisheng.vip/)
-### 开源项目（react-admin-plus）：[**传送门**](https://github.com/qisi007/react-admin-plus)
-
-
-
-
-
+个人博客主页: [传送](https://www.liuguisheng.vip)
+开源项目（react-admin-plus）: [传送](https://github.com/qisi007/react-admin-plus)

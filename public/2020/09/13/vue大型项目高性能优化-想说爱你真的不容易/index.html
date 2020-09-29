@@ -6,7 +6,7 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>想说爱你不容易--vue大型项目高性能优化 | 刘贵生的博客</title>
+  <title>想说爱你不容易--vue大型项目高性能优化 | This-刘贵生的博客</title>
   <meta name="author" content="刘贵生">
   
   <meta name="description" content="个人博客主页,不定期分享一些前端资源。来即是缘,多逛一会儿再走也不迟。">
@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:title" content="想说爱你不容易--vue大型项目高性能优化"/>
-  <meta property="og:site_name" content="刘贵生的博客"/>
+  <meta property="og:site_name" content="This-刘贵生的博客"/>
 
   
     <meta property="og:image" content=""/>
@@ -72,7 +72,7 @@ var _hmt = _hmt || [];
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-	  <a class="navbar-brand" href="/">刘贵生的博客</a>
+	  <a class="navbar-brand" href="/">This-刘贵生的博客</a>
       <div class="collapse navbar-collapse nav-menu">
 		<ul class="nav navbar-nav">
 		  
@@ -130,13 +130,39 @@ var _hmt = _hmt || [];
 	
 	<div id="top_meta"></div>
 	<div class="col-md-9">
-	
+		
 
-	<!-- content -->
-	<div class="mypage">		
-	  		
+			<!-- content -->
+			<div class="mypage">
+				
+				<div class="content-count">
+					<!-- date -->
+					<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-date-fill"
+						fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd"
+							d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm.066-2.544c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2zm-2.957-2.89v5.332H5.77v-4.61h-.012c-.29.156-.883.52-1.258.777V8.16a12.6 12.6 0 0 1 1.313-.805h.632z" />
+					</svg>
+					
 
-	  <h2 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h2><p>&emsp;&emsp;目前公司的<code>电子合同</code>采用<code>表单设计器</code>+<code>合同业务</code>配合实现，做了半年多后终于上线，但是下边员工普遍反映卡顿，甚至卡死，爆栈。尤其是新增和修改合同页面，因为这部分数据量大，逻辑复杂，很容易崩溃，所以决定进行性能优化。</p>
+					<span class="meta-widget">
+						<span>创建日期:</span>
+						2020-09-13
+					</span>
+					&nbsp;
+					<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-book-half" fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd"
+							d="M8.5 2.687v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+					</svg>
+					<span class="words-num"></span>&emsp;
+					<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-alarm-fill" fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd"
+							d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527zM8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
+					</svg>
+					<span class="time-box"></span>
+				</div>
+				<h2 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h2><p>&emsp;&emsp;目前公司的<code>电子合同</code>采用<code>表单设计器</code>+<code>合同业务</code>配合实现，做了半年多后终于上线，但是下边员工普遍反映卡顿，甚至卡死，爆栈。尤其是新增和修改合同页面，因为这部分数据量大，逻辑复杂，很容易崩溃，所以决定进行性能优化。</p>
 <h2 id="二、业务场景介绍"><a href="#二、业务场景介绍" class="headerlink" title="二、业务场景介绍"></a>二、业务场景介绍</h2><p>&emsp;&emsp;先来了解一下我们是怎么实现：</p>
 <p>&emsp;&emsp;1. 因为我们公司合同变换频繁，条款之间还有逻辑，所以做了个<code>基础服务</code>（说白了就是组件库），为合同提供模板</p>
 <p>&emsp;&emsp;2. 表单设计器作为基础服务，打包成了组件库，嵌入到合同项目，包括合同生成组件（拖拽生成合同模板）和合同预览组件（加载数据库中的合同模板数据）</p>
@@ -261,12 +287,12 @@ export default {
 <h2 id="七、总结"><a href="#七、总结" class="headerlink" title="七、总结"></a>七、总结</h2><p>&emsp;&emsp; 这是我第一次费这么大劲做vue项目的性能优化，虽然坎坷，但也留下了好结果，我们从最初加载需要50秒甚至一分钟，到现在10秒左右就能加载成功，速度提高可近5倍。</p>
 <p>&emsp;&emsp; 整体效果如下：<br><img src="https://qjprod-images.oss-cn-beijing.aliyuncs.com/menuResource/1600564965755?name=111.gif" alt="image"></p>
 <p>&emsp;&emsp; 今日成果，虽数月，但众人拾柴，得以燎原，此非一人之功，谢而不及。</p>
-	  
-	</div>
 
-	<div>
-  	<center>
-	<div class="pagination">
+			</div>
+
+			<div>
+				<center>
+					<div class="pagination">
 
     
     
@@ -283,11 +309,11 @@ export default {
     
 </div>
 
-    </center>
-	</div>
-	
-	<!-- comment -->
-	<!-- 
+				</center>
+			</div>
+
+			<!-- comment -->
+			<!-- 
 <section id="comment">
     <h2 class="title">留言</h2>
 
@@ -296,18 +322,10 @@ export default {
 
 
 	 -->
-	</div> <!-- col-md-9/col-md-12 -->
-	
-	<div id="side_meta">
-		<div class="col-md-3" id="post_meta"> 
-
-	<!-- date -->
-	
-	<div class="meta-widget">
-	<i class="fa fa-clock-o"></i>
-	2020-09-13 
-	</div>
-	
+		</div> <!-- col-md-9/col-md-12 -->
+		
+		<div id="side_meta">
+			<div class="col-md-3" id="post_meta"> 
 
 	<!-- categories -->
     
@@ -370,17 +388,60 @@ export default {
 	} */
 </style>
 
-	</div>
+		</div>
 		
-</div>
+	</div>
+
+	
 
 
-
-
-
+	
 	<div id="gitalk-container"></div>
-	<link rel="stylesheet" href="https://unpkg.com/gitalk@latest/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<style>
+blockquote {
+    background-color: #fff;
+}
+
+.gt-container .gt-comment-content:hover {
+    box-shadow: none;
+}
+
+.gt-container .gt-error {
+    display: none!important;
+}
+
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    color: #333!important;
+    font-family: 微软雅黑;
+    padding-top: 10px;
+}
+
+.mypage h1, 
+.mypage h2, 
+.mypage h3, 
+.mypage h4, 
+.mypage h5, 
+.mypage h6,
+.page-header h1, 
+.page-header h2, 
+.page-header h3, 
+.page-header h4, 
+.page-header h5, 
+.page-header h6 {
+    color: #fff!important;
+}
+
+</style>
+
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script src="https://priesttomb.github.io/js/md5.min.js"></script>
 <script type="text/javascript">
     new Gitalk({
@@ -393,8 +454,38 @@ export default {
         distractionFreeMode: true
     }).render('gitalk-container')
 </script>
+	
+
+	<script>
+		// 获取当前地址，歌单和关于我页面不添加
+		let currentUrl = window.location.href;
+		let arrUrl = currentUrl.split('/');
+		let otherPage = new Set(['about', 'music']);
+		if (otherPage.has(arrUrl[arrUrl.length - 2])) {
+			let contentCountDom = document.querySelector(".content-count");
+			contentCountDom.style.display = 'none';
+		}
+		// 统计字数
+		let content = document.querySelector(".mypage");
+		let words = content.innerHTML.length;
+		let wordsNumDom = document.querySelector(".words-num");
+		wordsNumDom.innerHTML = `文章字数: ${words}`;
+		// 计算阅读时长
+		let timeBoxDom = document.querySelector(".time-box");
+		timeBoxDom.innerHTML = `阅读时长: ${parseInt(words * 0.2 / 60)}分钟`;
 
 
+
+	</script>
+
+	<style>
+		.content-count {
+			line-height: 80px;
+			font-size: 14px;
+			text-align: right;
+			padding-right: 5px;
+		}
+	</style>
 	</div>
   </div>
   <div class="container-narrow">
@@ -403,6 +494,22 @@ export default {
   
 </p>
 <p>友情链接: <a href="https://www.allqj.com/" target="_blank" rel="noopener">千家找房网</a> </p>
+
+<!-- 
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<span class="site-uv">
+    总访客量:
+    <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
+</span>&nbsp;
+
+
+<span class="site-pv">
+    总访问量:
+    <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
+</span>
+
+ -->
  </footer>
 </div> <!-- container-narrow -->
   

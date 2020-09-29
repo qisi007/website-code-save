@@ -94,3 +94,9 @@ post_wordcount:
   item_text: true
   wordcount: true
   min2read: true
+
+visit_counter: 
+  site_uv: true # 访客数量
+  site_pv: true # 浏览次数
+
+

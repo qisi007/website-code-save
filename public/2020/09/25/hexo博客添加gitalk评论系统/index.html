@@ -61,6 +61,22 @@ var _hmt = _hmt || [];
 </script>
 
 
+
+  <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+
 <meta name="generator" content="Hexo 4.2.0"></head>
 
  <body>  
@@ -208,8 +224,8 @@ var _hmt = _hmt || [];
 <p>&emsp;&emsp;还有个问题是进入博客详情页后，评论插件上面显示<code>Error: Validation Failed</code>, 这是因为文章名称经URL编码后添加到issues的label里，但是label的长度上限是50个字符，所以文章名有些长的都会生成label失败，也就没办法评论了。</p>
 <p>&emsp;&emsp;所以上面我们用到了<code>md5</code>,文章名经URL编码后转MD5，然后再生成label,这样就不会超过长度了。</p>
 <p><img src="https://img-blog.csdnimg.cn/20200925173930342.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGVMaXVndWlzaGVuZw==,size_16,color_FFFFFF,t_70" alt="image"></p>
-<h1 id="四、写在最后"><a href="#四、写在最后" class="headerlink" title="四、写在最后"></a>四、写在最后</h1><p>&emsp;&emsp; 我的博客主题用的是<code>freemind</code>，这是一个复古风格的主题，这个主题本身不带评论插件的，本人进行了二次封装，修改了一些样式和bug,并上传到了自己的<code>github</code>中，欢迎star。  <a href="https://github.com/qisi007/hexo-theme-freemind.386.second"><strong>传送门</strong></a></p>
-<p>个人博客主页: <a href="https://www.liuguisheng.vip" target="_blank" rel="noopener">传送</a><br>开源项目（react-admin-plus）: <a href="https://github.com/qisi007/react-admin-plus">传送</a></p>
+<h1 id="四、写在最后"><a href="#四、写在最后" class="headerlink" title="四、写在最后"></a>四、写在最后</h1><p>&emsp;&emsp; 我的博客主题用的是<code>freemind</code>，这是一个复古风格的主题，这个主题本身不带评论插件的，本人进行了二次封装，修改了一些样式和bug,并上传到了自己的<code>github</code>中，欢迎star。  <a href="https://github.com/qisi007/hexo-theme-freemind.386.second" target="_blank" rel="noopener"><strong>传送门</strong></a></p>
+<p>个人博客主页: <a href="https://www.liuguisheng.vip" target="_blank" rel="noopener">传送</a><br>开源项目（react-admin-plus）: <a href="https://github.com/qisi007/react-admin-plus" target="_blank" rel="noopener">传送</a></p>
 
 			</div>
 

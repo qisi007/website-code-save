@@ -1,6 +1,7 @@
 ---
 title: hexo博客添加gitalk评论系统
 date: 2020-09-25 17:48:32
+categories: 博客插件
 tags:
  - hexo
  - github

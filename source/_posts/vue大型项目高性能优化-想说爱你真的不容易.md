@@ -1,7 +1,7 @@
 ---
 title: 想说爱你不容易--vue大型项目高性能优化
 date: 2020-09-13 10:40:59
-categories: 个人博客
+categories: vue项目性能优化
 tags:
  - vue
  - 性能优化
